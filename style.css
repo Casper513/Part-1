@@ -1,0 +1,65 @@
+*, html, body{
+   margin: 0;
+   padding: 0;
+}
+
+:root{
+   --main-bg-color: #222;
+   --bg-1: aqua;
+   --bg-2: tomato;
+   --bg-3: rgb(85, 156, 236);
+   --bg-5: rgb(166, 247, 36);
+   --bg-6: rgb(253, 253, 95);
+}
+
+.container{
+   width: 100%;
+   height: 100vh;
+   background-color: var(--bg-1);
+}
+.wrapper{
+   display: flex;
+   justify-content: center;
+   width: auto;
+   height: auto;
+   border: 3px solid var(--main-bg-color);
+}
+.card{
+   border: 2px solid var(--main-bg-color);
+   border-radius: 20px;
+   padding: 20px;
+   margin: 5px;
+   background-color: var(--bg-5);
+   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.50);
+}
+
+.text-center{
+   text-align: center;
+}
+.title{
+   margin-top: -10px;
+   font-size: 2rem;
+}
+.icons{
+   margin-top: 8px;
+   font-size: 3rem;
+}
+
+.description{
+   margin-top: 20px;
+   font-size: 1rem;
+}
+.btn{
+   margin-top: 20px;
+   padding: 8px;
+   font-size: 1rem;
+   cursor: pointer;
+   border: none;
+   width: 200px;
+   background-color: var(--bg-5);
+}
+.btn:hover{
+   background-color: var(--bg-3);
+   color: var(--bg-5);
+   transform: skewY(3deg);
+}
